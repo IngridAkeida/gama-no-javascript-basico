@@ -16,10 +16,15 @@ function validaCPF(cpf){
 
         var soma = 0;
         for (var i = 10; i>1; i--){
-            soma+= numeros.
+            soma+= numeros.charAt(10-i)*i;     
         }
-            
-        return true;
+        console.log(soma);
+
+        var resultado = (soma % 11) < 2 ? 0 : 11 - (soma % 11);
+
+
+
+    return true;
 
     }
 }
