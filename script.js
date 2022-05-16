@@ -1,7 +1,7 @@
 console.log('Javascript laralara');
 
 function validaCPF(cpf){
-    return true;
+    return false;
 }
 
 
@@ -15,6 +15,8 @@ function validacao(){
 
     if(resultadovalidacao){
         document.getElementById('success').style.display = 'block';
+    } else {
+        document.getElementById('error').style.display = 'block';
     }
 
     console.log(cpf);
