@@ -22,6 +22,13 @@ function validaCPF(cpf){
 
         var resultado = (soma % 11) < 2 ? 0 : 11 - (soma % 11);
 
+        if(resultado!= digitos.charAt(0)){
+            return false;
+        } 
+
+        console.log(
+            digitos.toString().charAt(0) + ' é a primeira posicao da variavel de soma'
+        );
 
 
     return true;
