@@ -60,6 +60,8 @@ function validaCPF(cpf){
 
 function validacao(){
     //console.log('Iniciando validacao de cpf');
+
+    // Para autualizar a informacao de CPF
     document.getElementById('success').style.display = 'none';
 
     document.getElementById('error').style.display = 'none';
