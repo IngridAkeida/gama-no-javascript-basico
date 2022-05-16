@@ -1,12 +1,32 @@
-console.log('Javascript laralara');
+//console.log('Javascript laralara');
 
 function validaCPF(cpf){
-    return false;
+
+    console.log(cpf.length)
+
+    if(cpf.length !=11){
+        return false;
+    } else {
+        var numeros = cpf.substring(0, 9);
+        var digitos = cpf.substring(9);
+
+        // console.log('numeros do cpf' +numeros);
+        
+        // console.log('digitos do cpf' +digitos);
+
+        var soma = 0;
+        for (var i = 10; i>1; i--){
+            soma+= numeros.
+        }
+            
+        return true;
+
+    }
 }
 
 
 function validacao(){
-    console.log('Iniciando validacao de cpf');
+    //console.log('Iniciando validacao de cpf');
 
 
     var cpf = document.getElementById('cpf_digitado').value;
