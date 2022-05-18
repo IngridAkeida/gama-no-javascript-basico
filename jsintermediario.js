@@ -100,5 +100,15 @@ console.log(listResult);
 
 // Adicao de novo elemento - uso do spread (...variavel)
 
+let secundary = ['A', 'B', 'C'];
+let principal = [...secundary];
+
+principal.push('D'); // somente o principal recebe o 'D'
+
+console.log(`Este é o exemplo principal: ${principal}`);
+console.log(`Este é o exemplo secundário: ${secundary}`);
+
+
+
 
 
