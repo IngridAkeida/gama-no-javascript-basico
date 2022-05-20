@@ -1,3 +1,6 @@
+//--------------------------Tamplate String ---------------------------------
+
+
 let meuNome = 'Ingrid';
 let meuSobrenome = 'Sanches';
 let minhaProfissao = 'Estudante';
@@ -6,7 +9,7 @@ console.log('Olá, meu nome é ' +meuNome+ ' ' +meuSobrenome+', atualmente eu so
 //com template string
 console.log(`Olá, meu nome é ${meuNome} ${meuSobrenome}, atualmente eu sou ${minhaProfissao}.`);
 
-// Operadores ternários 
+// -----------------------Operadores ternários------------------------------
 
 let isValid = true; 
 
@@ -31,6 +34,8 @@ let zero = 0;
 const numeroResultado = zero > 0 ? 0 : -1;
 
 console.log(numeroResultado);
+
+//-----------------------------------Arrow function-----------------------------
 
 // sem Arrow function
 
@@ -74,6 +79,7 @@ const nomes = (nome, sobrenome) => {
 
 console.log(nomes('Ingrid', 'Sanches'));
 
+//-------------------------------- Operador spread -----------------------------
 
 // Listas (incluir valores a lista forma mais longa) - uso do spread (...variavel)
 
@@ -107,6 +113,63 @@ principal.push('D'); // somente o principal recebe o 'D'
 
 console.log(`Este é o exemplo principal: ${principal}`);
 console.log(`Este é o exemplo secundário: ${secundary}`);
+
+//------------------------------Desestruct------------------------------------
+
+const pessoa = {
+    newName: 'Ingrid',
+    newLastName: 'Sanches',
+    newAge: 29,
+    newProfession: 'Student'
+};
+
+console.log(pessoa);
+
+// Se a informacao vinher de um API e precisar ser mais destrinchada, uma forma é chamar o objeto dessa forma
+
+let name1 = pessoa.newName;
+let lastName = pessoa.newLastName;
+let age = pessoa.newAge;
+let profession = pessoa.newProfession;
+
+console.log(name1, lastName, age, profession);
+
+//ou usando desestruct
+
+let{newName, newLastName, newAge, newProfession} = pessoa;
+
+console.log(newName, newLastName, newAge, newProfession);
+
+//Obs: Se você colocar um objeto que não exista ela vai apresentar undefined na informacao que você não tem e retornar a informacao das demais 
+
+
+//------------------------------Match------------------------------------
+let CPF = '123.456.789-00';
+const meuCPF = `Meu CPF é: ${CPF}.`;
+
+const regex = new RegExp('[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}');
+
+console.log(meuCPF.match(regex));
+
+const meuCPF2 = `Meu CPF é: 123.456.789-00.`;
+
+const regex2 = new RegExp('[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}');
+
+console.log(meuCPF2.match(regex2));
+
+
+
+//-----------------------------Single page aplication ---------------------
+
+// React
+// Angula
+// Vue.js
+
+
+
+
+
+
 
 
 
